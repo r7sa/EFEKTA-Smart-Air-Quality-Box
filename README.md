@@ -1,1 +1,1 @@
-# EFEKTA-Smart-Air-Quality-Box
+# EFEKTA Smart Air Quality Box
