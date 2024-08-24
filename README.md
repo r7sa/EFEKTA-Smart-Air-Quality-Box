@@ -6,4 +6,4 @@
 
 Описание: http://efektalab.com/Smart_Air_Quality_Box
 
-![EFEKTA Smart Air Quality Box](https://raw.githubusercontent.com/smartboxchannel/EFEKTA-TH-DUO/main/Images/01.jpg) 
+![EFEKTA Smart Air Quality Box](https://raw.githubusercontent.com/smartboxchannel/EFEKTA-Smart-Air-Quality-Box/main/Images/box.png)
