@@ -8,6 +8,8 @@ Sprut.hub Wiki | Добавление кастомных шаблонов - http
 
 ![EFEKTA Smart Air Quality Box](https://raw.githubusercontent.com/smartboxchannel/EFEKTA-Smart-Air-Quality-Box/main/Images/01.png)
 
+![EFEKTA Smart Air Quality Box](https://raw.githubusercontent.com/smartboxchannel/EFEKTA-Smart-Air-Quality-Box/main/Images/07.png)
+
 ![EFEKTA Smart Air Quality Box](https://raw.githubusercontent.com/smartboxchannel/EFEKTA-Smart-Air-Quality-Box/main/Images/02.png)
 
 ![EFEKTA Smart Air Quality Box](https://raw.githubusercontent.com/smartboxchannel/EFEKTA-Smart-Air-Quality-Box/main/Images/03.png)
