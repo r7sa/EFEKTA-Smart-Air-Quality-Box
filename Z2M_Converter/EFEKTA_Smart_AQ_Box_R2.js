@@ -314,15 +314,12 @@ const definition = {
         fromZigbee: [fz.temperature, fz.humidity, fz.pressure, fzLocal.co2, fzLocal.co2_config, fzLocal.pm25_config, fzLocal.pm25, fzLocal.air_quality, fzLocal.temperaturef_config, fzLocal.humidity_config, fzLocal.co2_gasstat_config, fzLocal.pm25_gasstat_config, fzLocal.voc_gasstat_config],
         toZigbee: [tz.factory_reset, tzLocal.co2_config, tzLocal.pm25_config, tzLocal.temperaturef_config, tzLocal.humidity_config, tzLocal.co2_gasstat_config, tzLocal.pm25_gasstat_config, tzLocal.voc_gasstat_config],
         configure: async (device, coordinatorEndpoint, logger) => {
-            //const endpoint1 = device.getEndpoint(1);
 			const endpoint2 = device.getEndpoint(2);
 			const endpoint3 = device.getEndpoint(3);
 			const endpoint4 = device.getEndpoint(4);
-            //const clusters1 = ['msPressureMeasurement', 'msTemperatureMeasurement', 'msRelativeHumidity'];
 			const clusters2 = ['msCO2'];
 			const clusters3 = ['pm25Measurement'];
 			const clusters4 = ['genAnalogInput', 'msPressureMeasurement', 'msTemperatureMeasurement', 'msRelativeHumidity'];
-			//await reporting.bind(endpoint1, coordinatorEndpoint, clusters1);
 			await reporting.bind(endpoint2, coordinatorEndpoint, clusters2);
 			await reporting.bind(endpoint3, coordinatorEndpoint, clusters3);
 			await reporting.bind(endpoint4, coordinatorEndpoint, clusters4);
