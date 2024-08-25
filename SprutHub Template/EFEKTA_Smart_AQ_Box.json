@@ -274,7 +274,7 @@
     },
 	{
       "type": "AirQualitySensor",
-	  "name": "Датчик PM 1\.0",
+	  "name": "Датчик PM 1",
       "logics": [
         {
           "type": "AirQualityFromC_PM1_0Density"
@@ -697,8 +697,7 @@
       "name": "Прямая работа вкл/выкл",
       "description": "Прямое управление исполнительным устройством (реле, розетки, выключатели) по уровню СO2.",
       "type": "String",
-      "bind": true,
-      "bindGroup": false
+      "bind": true
     }
   ]
 }
