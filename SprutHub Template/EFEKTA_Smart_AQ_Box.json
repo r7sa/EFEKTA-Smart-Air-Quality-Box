@@ -10,13 +10,13 @@
      {
       "zcl": [
 	    {
-          "endpoint": 1,
+          "endpoint": 4,
           "cluster": "0402_TemperatureMeasurement",
           "attribute": "0410_Custom",
           "zclDataType": "SIGNED_16_BIT_INTEGER"
         },
 		{
-          "endpoint": 1,
+          "endpoint": 4,
           "cluster": "0405_RelativeHumidityMeasurement",
           "attribute": "0210_Custom",
           "zclDataType": "SIGNED_16_BIT_INTEGER"
@@ -169,7 +169,7 @@
     },
 	{
       "link": {
-        "endpoint": 1,
+        "endpoint": 4,
         "cluster": "0402_TemperatureMeasurement",
         "attribute": "0000_MeasuredValue"
       },
@@ -182,7 +182,7 @@
     },
     {
       "link": {
-        "endpoint": 1,
+        "endpoint": 4,
         "cluster": "0405_RelativeHumidityMeasurement",
         "attribute": "0000_MeasuredValue"
       },
@@ -195,7 +195,7 @@
     },
 	{
       "link": {
-        "endpoint": 1,
+        "endpoint": 4,
         "cluster": "0403_PressureMeasurement",
         "attribute": "0000_MeasuredValue"
       },
@@ -223,9 +223,45 @@
       "link": {
         "endpoint": 3,
         "cluster": "042A_PM25",
-        "attribute": "0000_MeasuredValue",
-		"attribute": "0601_Custom",
-		"attribute": "0602_Custom",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+		"attribute": "0601_Custom"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+		"attribute": "0602_Custom"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
 		"attribute": "0604_Custom"
       },
       "bind": true,
@@ -385,7 +421,7 @@
         {
           "type": "CurrentTemperature",
           "link": {
-            "endpoint": 1,
+            "endpoint": 4,
             "cluster": "0402_TemperatureMeasurement",
             "attribute": "0000_MeasuredValue"
           }
@@ -398,7 +434,7 @@
         {
           "type": "CurrentRelativeHumidity",
           "link": {
-            "endpoint": 1,
+            "endpoint": 4,
             "cluster": "0405_RelativeHumidityMeasurement",
             "attribute": "0000_MeasuredValue"
           }
@@ -411,7 +447,7 @@
         {
           "type": "C_CurrentAtmosphericPressure",
           "link": {
-            "endpoint": 1,
+            "endpoint": 4,
             "cluster": "0403_PressureMeasurement",
             "attribute": "0000_MeasuredValue"
           }
@@ -473,7 +509,7 @@
     },
     {
       "link": {
-        "endpoint": 1,
+        "endpoint": 4,
         "cluster": "0402_TemperatureMeasurement",
         "attribute": "0410_Custom"
       },
@@ -488,7 +524,7 @@
     },
     {
       "link": {
-        "endpoint": 1,
+        "endpoint": 4,
         "cluster": "0405_RelativeHumidityMeasurement",
         "attribute": "0210_Custom"
       },
