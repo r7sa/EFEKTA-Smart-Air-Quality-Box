@@ -309,7 +309,7 @@ const definition = {
         zigbeeModel: ['EFEKTA_Smart_AQ_Box'],
         model: 'EFEKTA_Smart_AQ_Box',
         vendor: 'EfektaLab',
-        description: '[EFEKTA Smart Air Quality Box, PM1.0, PM2.5, PM10, AQ PM2.5 Index, CO2, VOC Index, Pressure, Temperature, Humidity, ws2812b indicator, can control the relay, binding on some other devices](http://efektalab.com/CO2_Monitor)',
+        description: '[EFEKTA Smart Air Quality Box, PM1.0, PM2.5, PM10, AQ PM2.5 Index, CO2, VOC Index, Pressure, Temperature, Humidity, ws2812b indicator, can control the relay, binding on some other devices](http://efektalab.com/Smart_Air_Quality_Box)',
         fromZigbee: [fz.temperature, fz.humidity, fz.pressure, fzLocal.co2, fzLocal.co2_config, fzLocal.pm25_config, fzLocal.pm25, fzLocal.air_quality, fzLocal.temperaturef_config, fzLocal.humidity_config, fzLocal.co2_gasstat_config, fzLocal.pm25_gasstat_config, fzLocal.voc_gasstat_config],
         toZigbee: [tz.factory_reset, tzLocal.co2_config, tzLocal.pm25_config, tzLocal.temperaturef_config, tzLocal.humidity_config, tzLocal.co2_gasstat_config, tzLocal.pm25_gasstat_config, tzLocal.voc_gasstat_config],
         configure: async (device, coordinatorEndpoint, logger) => {
