@@ -16,7 +16,7 @@ const {precisionRound} = require('zigbee-herdsman-converters/lib/utils');
 
 const tzLocal = {
 	co2_config: {
-        key: ['auto_brightness', 'forced_recalibration', 'factory_reset_co2', 'long_chart_period',
+        key: ['auto_brightness', 'forced_recalibration', 'factory_reset_co2',
             'manual_forced_recalibration', 'light_indicator', 'light_ind_level', 'automatic_scal', 'reading_delay', 'alarm'],
         convertSet: async (entity, key, rawValue, meta) => {
             const endpoint = meta.device.getEndpoint(2);
@@ -26,7 +26,6 @@ const tzLocal = {
                 auto_brightness: ['msCO2', {0x0203: {value, type: 0x10}}],
                 forced_recalibration: ['msCO2', {0x0202: {value, type: 0x10}}],
                 factory_reset_co2: ['msCO2', {0x0206: {value, type: 0x10}}],
-                long_chart_period: ['msCO2', {0x0204: {value, type: 0x10}}],
                 manual_forced_recalibration: ['msCO2', {0x0207: {value, type: 0x21}}],
                 light_indicator: ['msCO2', {0x0211: {value, type: 0x10}}],
                 light_ind_level: ['msCO2', {0x0209: {value, type: 0x20}}],
