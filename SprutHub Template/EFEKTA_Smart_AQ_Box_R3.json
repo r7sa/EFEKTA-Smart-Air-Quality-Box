@@ -1,0 +1,780 @@
+{
+  "name": "Датчик EFEKTA Smart AQ Box R3",
+  "manufacturer": "EfektaLab",
+  "model": "EFEKTA_Smart_AQ_Box_R3",
+  "manufacturerId": "EfektaLab",
+  "modelId": "EFEKTA_Smart_AQ_Box_R3",
+  "catalogId": -1,
+  "status": "Test",
+  "init": [
+     {
+      "zcl": [
+	    {
+          "endpoint": 4,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0410_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "0405_RelativeHumidityMeasurement",
+          "attribute": "0210_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+	    {
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0201_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0202_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0203_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0204_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0206_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0207_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0209_Custom",
+          "zclDataType": "UNSIGNED_8_BIT_INTEGER"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0211_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0240_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0402_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0220_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0221_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0222_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0330_Custom",
+          "zclDataType": "UNSIGNED_8_BIT_INTEGER"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0331_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0220_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0221_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0222_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0601_Custom",
+          "zclDataType": "FLOAT_32_BIT"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0602_Custom",
+          "zclDataType": "FLOAT_32_BIT"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0605_Custom",
+          "zclDataType": "FLOAT_32_BIT"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "042A_PM25",
+          "attribute": "0604_Custom",
+          "zclDataType": "FLOAT_32_BIT"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "000C_AnalogInputBasic",
+          "attribute": "0220_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "000C_AnalogInputBasic",
+          "attribute": "0221_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "000C_AnalogInputBasic",
+          "attribute": "0222_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        }
+      ]
+    },
+	{
+      "link": {
+        "endpoint": 4,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 30,
+        "max": 3600,
+        "change": 10
+      }
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "0405_RelativeHumidityMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 30,
+        "max": 3600,
+        "change": 10
+      }
+    },
+	{
+      "link": {
+        "endpoint": 4,
+        "cluster": "0403_PressureMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 300,
+        "max": 3600,
+        "change": 1
+	  }
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 0.000001
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+		"attribute": "0601_Custom"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+		"attribute": "0602_Custom"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+		"attribute": "0604_Custom"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+		"attribute": "0605_Custom"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "000C_AnalogInputBasic",
+        "attribute": "0055_PresentValue"
+      },
+      "bind": true,
+      "report": {
+        "min": 20,
+        "max": 3600,
+        "change": 1
+      }
+    }
+  ],
+  "services": [
+    {
+      "type": "AirQualitySensor",
+	  "name": "Датчик PM 2.5",
+      "logics": [
+        {
+          "type": "AirQualityFromPM2_5Density"
+        }
+      ],
+      "characteristics": [
+        {
+          "type": "PM2_5Density",
+          "link": [
+            {
+			  "type": "Double",
+              "endpoint": 3,
+              "cluster": "042A_PM25",
+              "attribute": "0000_MeasuredValue"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "type": "AirQualitySensor",
+	  "name": "Датчик PM 1",
+      "logics": [
+        {
+          "type": "AirQualityFromPM2_5Density"
+        }
+      ],
+      "characteristics": [
+        {
+          "type": "PM2_5Density",
+          "link": [
+            {
+			  "type": "Double",
+              "endpoint": 3,
+              "cluster": "042A_PM25",
+              "attribute": "0601_Custom"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "type": "AirQualitySensor",
+	  "name": "Датчик PM 4",
+      "logics": [
+        {
+          "type": "AirQualityFromPM2_5Density"
+        }
+      ],
+      "characteristics": [
+        {
+          "type": "PM2_5Density",
+          "link": [
+            {
+			  "type": "Double",
+              "endpoint": 3,
+              "cluster": "042A_PM25",
+              "attribute": "0605_Custom"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "type": "AirQualitySensor",
+	  "name": "Датчик PM 10",
+      "logics": [
+        {
+          "type": "AirQualityFromPM10Density"
+        }
+      ],
+      "characteristics": [
+        {
+          "type": "PM10Density",
+          "link": [
+            {
+			  "type": "Double",
+              "endpoint": 3,
+              "cluster": "042A_PM25",
+              "attribute": "0602_Custom"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "type": "AirQualitySensor",
+	  "name": "Датчик AQI",
+      "logics": [
+        {
+          "type": "AirQualityFromC_AQIDensity"
+        }
+      ],
+      "characteristics": [
+        {
+          "type": "C_AQIDensity",
+          "link": [
+            {
+			  "type": "Double",
+              "endpoint": 3,
+              "cluster": "042A_PM25",
+              "attribute": "0604_Custom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "CarbonDioxideSensor",
+      "logics": [
+        {
+          "type": "CarbonDioxideDetectedFromCarbonDioxideLevel"
+        }
+      ],
+      "characteristics": [
+        {
+          "type": "CarbonDioxideLevel",
+          "link": [
+            {
+              "endpoint": 2,
+              "cluster": "040D_CarbonDioxide",
+              "attribute": "0000_MeasuredValue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "AirQualitySensor",
+	  "name": "Датчик VOC",
+      "logics": [
+        {
+          "type": "AirQualityFromVOCDensity"
+        }
+      ],
+      "characteristics": [
+        {
+          "type": "VOCDensity",
+          "link": [
+            {
+              "endpoint": 4,
+              "cluster": "000C_AnalogInputBasic",
+              "attribute": "0055_PresentValue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TemperatureSensor",
+      "characteristics": [
+        {
+          "type": "CurrentTemperature",
+          "link": {
+            "endpoint": 4,
+            "cluster": "0402_TemperatureMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HumiditySensor",
+      "characteristics": [
+        {
+          "type": "CurrentRelativeHumidity",
+          "link": {
+            "endpoint": 4,
+            "cluster": "0405_RelativeHumidityMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+	{
+      "type": "C_AtmosphericPressureSensor",
+      "characteristics": [
+        {
+          "type": "C_CurrentAtmosphericPressure",
+          "link": {
+            "endpoint": 4,
+            "cluster": "0403_PressureMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    }
+  ],
+  "options": [
+    {
+        "link": {
+          "endpoint": 2,
+          "cluster": "040D_CarbonDioxide",
+          "attribute": "0201_Custom"
+        },
+        "name": "Интервал чтения сенсоров, в секундах",
+        "type": "Integer",
+		"unit": "сек.",
+        "init": false,
+        "value": 10,
+        "minValue": 10,
+        "maxValue": 360,
+        "minStep": 1
+    },
+	{
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0240_Custom"
+      },
+      "name": "Включение звукового оповещения о превышении уровня PM2.5, СO2, VOC",
+      "type": "Boolean",
+      "init": false,
+      "value": true
+    },
+	{
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0211_Custom"
+		},
+      "name": "Включение/отключение цветовой индикации",
+      "type": "Boolean",
+      "init": false,
+      "value": true
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0209_Custom"
+		},
+      "name": "Уровень яркости цветовой индикации",
+	  "unit": "%",
+      "type": "Integer",
+      "init": false,
+      "value": 1,
+      "minValue": 0,
+      "maxValue": 100
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0410_Custom"
+      },
+      "name": "Корректировка температуры встроенного сенсора",
+	  "description": "Единица равна корректировке в 0.1°C.",
+	  "unit": "°C",
+      "type": "Integer",
+      "init": false,
+      "value": 1,
+      "minValue": -50,
+      "maxValue": 50
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "0405_RelativeHumidityMeasurement",
+        "attribute": "0210_Custom"
+      },
+      "name": "Корректировка влажности встроенного сенсора",
+	  "unit": "%",
+      "type": "Integer",
+      "init": false,
+      "value": 1,
+      "minValue": -50,
+      "maxValue": 50
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+        "attribute": "0330_Custom"
+      },
+      "name": "Автоматическая очистка сенсора PM2.5",
+	  "description": "По умолчанию очистка один раз в семь дней, не рекомендуется настраивать очистку реже чем один раз в семь дней. Вентилятор включается на максимальную скорость на 10 секунд.",
+	  "unit": "°д.",
+      "type": "Integer",
+      "init": false,
+      "value": 7,
+      "minValue": 0,
+      "maxValue": 10
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+        "attribute": "0331_Custom"
+      },
+      "name": "Ручная, разовая очистка сенсора PM2.5",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0402_Custom"
+      },
+      "name": "Включение автокалибровки датчика CO2",
+      "type": "Boolean",
+      "init": false,
+      "value": true
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0202_Custom"
+      },
+      "name": "Принудительная калибровка датчика CO2 на атмосферный уровень CO2",
+      "description": "Выполняется на свежем воздухе, оставить датчик на 15 минут и после применить команду",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0206_Custom"
+      },
+      "name": "Сброс калибровки датчика CO2 на заводские настройки",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0207_Custom"
+      },
+      "name": "Установка значения с другого СО2 датчика",
+      "description": "Выполняется в стабильной воздушной среде, без сквозняков, оставить 2 датчика рядом на 15 минут и после отправить значение с поверочного датчика",
+      "type": "Integer",
+      "init": false,
+      "value": 0,
+      "minValue": 0,
+      "maxValue": 5000
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0220_Custom"
+      },
+      "name": "Газостат СО2",
+      "description": "Активация режима работы датчика как газостата, нужна привязка к исполнительному устройсву по кластеру OnOff.",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0221_Custom"
+      },
+      "name": "Газостат СО2, верхняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 1,
+      "minValue": 400,
+      "maxValue": 2000
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "040D_CarbonDioxide",
+        "attribute": "0222_Custom"
+      },
+      "name": "Газостат СО2, нижняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 1,
+      "minValue": 400,
+      "maxValue": 2000
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+        "attribute": "0220_Custom"
+      },
+      "name": "Пылестат PM2.5",
+      "description": "Активация режима работы датчика как пылестата, нужна привязка к исполнительному устройсву по кластеру OnOff.",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+        "attribute": "0221_Custom"
+      },
+      "name": "Пылестат PM2.5, верхняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 1000,
+      "minValue": 0,
+      "maxValue": 1000
+    },
+    {
+      "link": {
+        "endpoint": 3,
+        "cluster": "042A_PM25",
+        "attribute": "0222_Custom"
+      },
+      "name": "Пылестат PM2.5, нижняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 0,
+      "minValue": 0,
+      "maxValue": 1000
+    },
+	{
+      "link": {
+        "endpoint": 4,
+        "cluster": "000C_AnalogInputBasic",
+        "attribute": "0220_Custom"
+      },
+      "name": "Органикастат VOC",
+      "description": "Активация режима работы датчика как органикастата, нужна привязка к исполнительному устройсву по кластеру OnOff.",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "000C_AnalogInputBasic",
+        "attribute": "0221_Custom"
+      },
+      "name": "Органикастат VOC, верхняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 500,
+      "minValue": 0,
+      "maxValue": 500
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "000C_AnalogInputBasic",
+        "attribute": "0222_Custom"
+      },
+      "name": "Органикастат VOC, нижняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 0,
+      "minValue": 0,
+      "maxValue": 500
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0006_OnOff",
+        "output": true
+      },
+      "name": "Прямая работа вкл/выкл",
+      "description": "Прямое управление исполнительным устройством (реле, розетки, выключатели) по уровню СO2.",
+      "type": "String",
+      "bind": true
+    }
+  ]
+}
