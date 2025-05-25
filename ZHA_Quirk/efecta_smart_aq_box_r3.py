@@ -151,9 +151,10 @@ class RHMeasurement(RelativeHumidity, CustomCluster):
         min_value=-50,
         max_value=50,
         step=0.1,
-        multiplier=10,
+        multiplier=0.1,
         device_class=NumberDeviceClass.TEMPERATURE,
         unit=UnitOfTemperature.CELSIUS,
+        mode="box",
     )
     .number(
         RHMeasurement.AttributeDefs.humidity_offset.name,
@@ -167,6 +168,7 @@ class RHMeasurement(RelativeHumidity, CustomCluster):
         step=1,
         device_class=NumberDeviceClass.HUMIDITY,
         unit=PERCENTAGE,
+        mode="box",
     )
     .number(
         CO2Measurement.AttributeDefs.reading_delay.name,
@@ -183,15 +185,15 @@ class RHMeasurement(RelativeHumidity, CustomCluster):
     )
     .switch(
         CO2Measurement.AttributeDefs.alarm.name,
-        PMMeasurement.cluster_id,
+        CO2Measurement.cluster_id,
         endpoint_id=2,
         translation_key="alarm",
         fallback_name="Alarm",
         unique_id_suffix="alarm",
     )
     .switch(
-        CO2Measurement.AttributeDefs.alarm.name,
-        PMMeasurement.cluster_id,
+        CO2Measurement.AttributeDefs.light_indicator.name,
+        CO2Measurement.cluster_id,
         endpoint_id=2,
         translation_key="light_indicator",
         fallback_name="Enable or Disable light indicator",
@@ -199,7 +201,7 @@ class RHMeasurement(RelativeHumidity, CustomCluster):
     )
     .number(
         CO2Measurement.AttributeDefs.light_indicator_level.name,
-        PMMeasurement.cluster_id,
+        CO2Measurement.cluster_id,
         endpoint_id=2,
         translation_key="light_indicator_level",
         fallback_name="Light indicator level",
